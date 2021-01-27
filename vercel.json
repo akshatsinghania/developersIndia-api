@@ -9,6 +9,18 @@
             "methods": [
                 "GET"
             ]
+        },
+        {
+            "src": "/api/signup.js",
+            "methods":[
+                "POST"
+            ]
+        },
+        {
+            "src": "/api/login.js",
+            "methods": [
+                "POST"
+            ]
         }
     ]
 }
