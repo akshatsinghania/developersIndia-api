@@ -24,7 +24,6 @@ module.exports = async (req, res) => {
           const token = jwt.sign(payload, process.env.SEED_KEY, {
             expiresIn: "1h",
           });
-          // res.setHeader("auth-token", token);  //should I return the auth token as a header too?
           res.status(200).send({ token: token });
         } else {
           res.status(401).send("Invalid email");
